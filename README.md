@@ -40,34 +40,25 @@ To run this app, you will need to follow these 3 steps:
 
   ```
   # Clone this repository into the directory of your choice
-  $ git clone https://github.com/Williano/Final-Senior-Year-Project-.git
+  $ git clone https://github.com/phani2003/Major_project.git
 
-  # Move into project folder
-  $ cd Final-Senior-Year-Project-
 
-  # Install from Pipfile
-  $ pipenv install -r requirements.txt 
+  #Use bellow commands to install necessary packages
+  $ pip install django==2.1.7
+  $ pip install –only-binary :all: mysqlclient
+  $ pip install openpyxl
+  $ pip install pandas
+  $ pip install matplotlib
+  $ pip install seaborn
+  $ pip install sklearn-genetic==0.2
+  $ pip install xlwt
 
-  # Activate the Pipenv shell
-  $ pipenv shell
+  # Start the apache and MYSQL server.
+ 
 
-  # Create database tables
-  (Final-Senior-Year-Project-XXXX) $ python manage.py migrate
-  
-  # Create superuser account
-  (Final-Senior-Year-Project-XXXX) $ python manage.py createsuperuser
+  # use bellow command to start the server
+  $ python manage.py runserver
 
-  # Start server
-  (Final-Senior-Year-Project-XXXX) $ python manage.py runserver
-  
-  # Copy the IP address provided once your server has completed building the site. (It will say something like >> Serving at 127.0.0.1....).
-  
-  # Open the address in the browser
-  >>> http://127.0.0.1:XXXX
-  
-  
-  # Django Admin
-  >>> http://127.0.0.1:XXXX/admin/
   ```
 
 
